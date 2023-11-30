@@ -30,8 +30,8 @@ include "../koneksi.php";
         <tr>
           <td><?php echo $i++; ?></td>
           <td><?php echo $data['nama_genre']; ?></td>
-          <td><a href="hapus_genre.php?id_genre=<?php echo $data['id_genre']; ?>" onClick="return confirm (Yakin INgin Menghapus Genre yg diPilih?)">Hapus</a></td>
-          <td><a href="">Ubah</a></td>
+          <td><a href="hapus_genre.php?id_genre=<?php echo $data['id_genre']; ?>" onClick="return confirm ('yaqueen mw delete? :/')">Hapus</a></td>
+          <td><a href="form_update_genre.php?id_genre=<?php echo $data['id_genre']; ?>" >Ubah</a></td>
         </tr>
     
     <?php

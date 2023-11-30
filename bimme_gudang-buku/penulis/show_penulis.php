@@ -19,7 +19,8 @@ include "../koneksi.php";
             <td>Jenis Kelamin</td>
             <td>No. Telp Penulis</td>
             <td>Email Penulis</td>  
-            <td colspan='2'></td>
+            <td>Alamat Penulis</td>  
+            <td colspan='2'>Aksi</td>
         </tr>
 
         <?php
@@ -36,8 +37,9 @@ include "../koneksi.php";
         <td><?php echo $data['jk'];?> </td>
         <td><?php echo $data['no_telp_penulis'];?> </td>
         <td><?php echo $data['email_penulis'];?> </td>
-        <td><a href="hapus_penulis.php?id_penulis=<?php echo $data['id_penulis']; ?>" onClick="return confirm (Yakin Ingin Menghapus Penulis yg diPilih?)">Hapus</a></td>
-        <td><a href="form_update_penulis.php?id_penulis=<?php echo $data['id_penulis']; ?>" onClick="return confirm (Yakin Ingin Update Penulis yg diPilih?)">Update</a></td>
+        <td><?php echo $data['alamat_penulis'];?> </td>
+        <td><a href="hapus_penulis.php?id_penulis=<?php echo $data['id_penulis']; ?>" onClick="return confirm ('yakin mau didelete? :/')">Hapus</a></td>
+        <td><a href="form_update_penulis.php?id_penulis=<?php echo $data['id_penulis']; ?>"">Update</a></td>
         </tr>
         
         <?php

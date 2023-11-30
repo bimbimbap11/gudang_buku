@@ -9,8 +9,7 @@
   $sql_eksekusi = mysqli_query($koneksi, $sql);
   if($sql_eksekusi)
   {
-    echo "Genre Berhasil Ditambah<br>";
-    echo "Menuju <a href='show_genre.php'>Show Genre</a>";
+    header("location:show_genre.php");
   }
   else
   {
